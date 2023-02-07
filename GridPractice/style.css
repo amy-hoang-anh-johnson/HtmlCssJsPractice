@@ -1,28 +1,80 @@
-body {
-  margin: 0px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.main {
-  background-color: blue;
-  width: 100vw;
-  height: 100vh;
+.container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
 }
 
-.main2 {
-  background-color: white;
-  width: 70vw;
-  height: 100vh;
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 1vh 1vh;
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
 }
 
-.box {
-  background-color: red;
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
 }
 
-img {
+.container .box .dream img{
   width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 1em;
+
+}
+
+
+
+
+
+
+
 }
